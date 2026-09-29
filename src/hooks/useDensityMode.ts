@@ -73,7 +73,7 @@ export function useDensityMode(
             } catch {
               // ignore
             }
-            onPersistErrorRef.current?.(
+            onPersistErrorRef.current?(
               "Could not save density preference. Changes reverted.",
             );
           }
@@ -87,7 +87,7 @@ export function useDensityMode(
           } catch {
             // ignore
           }
-          onPersistErrorRef.current?.(
+          onPersistErrorRef.current?(
             "Could not save density preference. Changes reverted.",
           );
         });
